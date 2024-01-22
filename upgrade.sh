@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 echo "Update du config.json"
 read  -p "Nom du mineur = " MINERNAME
