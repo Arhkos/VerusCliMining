@@ -9,4 +9,4 @@ wget https://raw.githubusercontent.com/Arhkos/VerusCliMining/main/autostartminin
 
 
 
-Echo "Update terminée"
+echo "Update terminée"
