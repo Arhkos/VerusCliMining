@@ -1,4 +1,4 @@
-#!/bin/bash
+o#!/bin/bash
 
 echo "Update du config.json"
 read  -p "Nom du mineur = " MINERNAME
@@ -9,5 +9,5 @@ sed '9s/SG10e/$MINERNAME/' ccminer/config.json
 echo "Update du script autostartmining"
 wget https://raw.githubusercontent.com/Arhkos/VerusCliMining/main/autostartmining.sh -O /etc/profile.d/autostartmining.sh
 echo "autostartmining copié"
-dfsf
+echo "dfsf"
 echo "Update terminée"
