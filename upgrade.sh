@@ -19,7 +19,6 @@ wget https://raw.githubusercontent.com/Arhkos/VerusCliMining/main/config.json -O
 echo "config.json copied  "
 echo "Update de la config pour $1"
 tmpfile=$(mktemp); cp ~/ccminer/config.json "$tmpfile" && jq --arg newval "$MINERNAME" '.user |= $newval' "$tmpfile" >~/ccminer/config.json && rm -f "$tmpfile"
-echo "screen -dmS miner ccminer/start.sh" > ~/g.sh
 chmod +x ~/g.sh
 
 echo "pkill screen
