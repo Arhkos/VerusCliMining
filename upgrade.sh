@@ -22,5 +22,10 @@ tmpfile=$(mktemp); cp ~/ccminer/config.json "$tmpfile" && jq --arg newval "$MINE
 echo "screen -dmS miner ccminer/start.sh" > ~/g.sh
 chmod +x ~/g.sh
 
+echo "pkill screen
+screen -wipe
+screen -dmS miner ccminer/start.sh" > ~/g.sh
+
+bash ~/g.sh
 
 echo "Update ok"
