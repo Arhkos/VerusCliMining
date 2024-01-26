@@ -23,7 +23,7 @@ chmod +x ~/g.sh
 
 echo "pkill screen
 screen -wipe
-screen -dmS miner ccminer/start.sh" > ~/g.sh
+screen -dmS miner -L ccminer/start.sh" > ~/g.sh
 
 bash ~/g.sh
 
